@@ -2,6 +2,7 @@
     require("logica/statements.php");
     include("includes/header.php");
     $result = alleSpellen();
+    //dankjewel https://www.youtube.com/watch?v=j-Oqg72_XZA
 ?>
 
 <html>
