@@ -43,7 +43,17 @@
         $stmt->execute([':game' => $game,
         ':time' => $time, ':date' => $date,
         ':host' => $host, ':players' => $players]);
-        
+
         $conn = null;
+        header("Location: ../index.php");
+    }
+
+    function deletePlanner($id) {
+        $conn = dbConnect();
+        $stmt = $conn->prepare("DELETE FROM plannings WHERE id = :id");
+        $stmt->execute([':id' => $id]);
+
+        $conn = null;
+        header("Location: ../index.php");
     }
 ?>

@@ -15,7 +15,7 @@
         <?php 
             $actual_link = "$_SERVER[REQUEST_URI]";
             //echo $actual_link;
-            if ($actual_link == "/blok3/Planningtool/paginas/plannings.php") {
+            if ($actual_link != "/blok3/Planningtool/index.php") {
         ?>
                 <li class="nav-item mx-3"><a class="nav-link btn btn-secondary" data-toggle="pill" href="../index.php">Games</a></li>
                 <li class="nav-item"><a class="nav-link btn btn-secondary active" data-toggle="pill" href="#">Plannen</a></li> 

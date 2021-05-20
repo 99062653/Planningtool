@@ -18,8 +18,8 @@
                         <li>Host: <?php echo $value["host"]; ?></li>
                         <li>Spelers: <?php echo $value["players"]; ?></li>
                     </ul>
-                    <button class="btn btn-danger float-right ml-3" href="../logica/deleteconfirm.php?id=<?php echo $value["id"]; ?>">X</button>
-                    <button class="btn btn-primary float-right mb-3" >meer info</button>
+                    <a class="btn btn-danger float-right ml-3" href="../logica/deleteconfirm.php?id=<?php echo $value["id"]; ?>">X</a>
+                    <a class="btn btn-primary float-right mb-3" >meer info</a>
                 </div>
         </div>
         <?php 
