@@ -20,9 +20,8 @@
                 <?php
             }
             ?>
-            <input class="mb-3" style="width: 230px;" type="time" name="time" required value="<?php echo $time;?>" placeholder="Vul hier de starttijd in"><br>
-            <input class="mb-3" style="width: 230px;" type="number" name="duration" required value="<?php echo $duration;?>" placeholder="Min. hoelang je wilt spelen"><br>
-            <input class="mb-3" style="width: 230px;" type="date" names="date" required value="<?php echo $date;?>" placeholder="Vul hier de datum in"><br>
+            <input class="mb-3" style="width: 230px;" type="time" name="time" required value="<?php echo $time;?>"><br>
+            <input class="mb-3" style="width: 230px;" type="text" name="date" required value="<?php echo $date;?>" placeholder="vul hier de datum in"><br>
             <input class="mb-3" style="width: 230px;" type="text" name="host" required value="<?php echo $host;?>" placeholder="Vul hier de host in"><br>
             <textarea cols="30" rows="10" name="players" required value="<?php echo $players;?>" placeholder="Vul hier de spelers in"></textarea><br>
             <input class="btn btn-primary" type="submit" value="Submit">

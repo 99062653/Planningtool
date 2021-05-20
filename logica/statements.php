@@ -33,12 +33,17 @@
         return $result;
     }
 
-    function insertPlanning($game, $time, $duration, $date, $host, $players) {
+    function insertPlanning($game, $time, $date, $host, $players) {
         $conn = dbConnect();
 
-        $stmt = $conn->prepare("INSERT INTO plannings (
-            'game', 'time', 'duration', 'date', 'host', 'players') VALUES (
-                :game, :time, :duration, :date, :host, :players");
-        $stmt->execute([])
+        $stmt = $conn->prepare("INSERT INTO 
+        plannings (game, time, date, host, players) 
+        VALUES (:game, :time, :date, :host, :players)");
+
+        $stmt->execute([':game' => $game,
+        ':time' => $time, ':date' => $date,
+        ':host' => $host, ':players' => $players]);
+        
+        $conn = null;
     }
 ?>

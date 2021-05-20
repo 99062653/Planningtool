@@ -15,15 +15,15 @@
         <?php 
             $actual_link = "$_SERVER[REQUEST_URI]";
             //echo $actual_link;
-            if ($actual_link == "/blok3/week7-9/Planningtool/paginas/plannen.php") {
+            if ($actual_link == "/blok3/Planningtool/paginas/plannings.php") {
         ?>
                 <li class="nav-item mx-3"><a class="nav-link btn btn-secondary" data-toggle="pill" href="../index.php">Games</a></li>
-                <li class="nav-item"><a class="nav-link btn btn-secondary active" data-toggle="pill" href="plannen.php">Plannen</a></li> 
+                <li class="nav-item"><a class="nav-link btn btn-secondary active" data-toggle="pill" href="#">Plannen</a></li> 
              <?php 
             }else { 
                 ?>
-                <li class="nav-item mx-3"><a class="nav-link active btn btn-secondary" data-toggle="pill" href="index.php">Games</a></li>
-                <li class="nav-item"><a class="nav-link btn btn-secondary" data-toggle="pill" href="paginas/plannen.php">Plannen</a></li>
+                <li class="nav-item mx-3"><a class="nav-link active btn btn-secondary" data-toggle="pill" href="#">Games</a></li>
+                <li class="nav-item"><a class="nav-link btn btn-secondary" data-toggle="pill" href="paginas/plannings.php">Plannen</a></li>
                  
         <?php 
             }
