@@ -33,16 +33,12 @@
         return $result;
     }
 
-    function voegPlanningToe() {
+    function insertPlanning($game, $time, $duration, $date, $host, $players) {
         $conn = dbConnect();
-        $stmt = $conn->prepare("INSERT INTO plannings(game, times, duration, host, players, date) VALUES (:game, :times, :duration, :host, :players, :date)");
-        $query->bindParam(":game", );
-        $query->bindParam(":times", );
-        $query->bindParam(":duration", );
-        $query->bindParam(":host", );
-        $query->bindParam(":players", );
-        $query->bindParam(":date", );
-        $query->execute();
-    }
 
+        $stmt = $conn->prepare("INSERT INTO plannings (
+            'game', 'time', 'duration', 'date', 'host', 'players') VALUES (
+                :game, :time, :duration, :date, :host, :players");
+        $stmt->execute([])
+    }
 ?>

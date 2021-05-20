@@ -7,7 +7,7 @@
 
 <html>
     <div>
-        <form class="text-center" action="plannenresult.php">
+        <form class="text-center" action="../logica/insertplanning.php" method="POST">
         <h2>Plan hier uw spel:</h2>
         <?php 
             if(isset($_GET["id"])) {
@@ -22,9 +22,9 @@
             ?>
             <input class="mb-3" style="width: 230px;" type="time" name="time" required value="<?php echo $time;?>" placeholder="Vul hier de starttijd in"><br>
             <input class="mb-3" style="width: 230px;" type="number" name="duration" required value="<?php echo $duration;?>" placeholder="Min. hoelang je wilt spelen"><br>
-            <input class="mb-3" style="width: 230px;" type="date" required value="<?php echo $date;?>" placeholder="Vul hier de datum in"><br>
+            <input class="mb-3" style="width: 230px;" type="date" names="date" required value="<?php echo $date;?>" placeholder="Vul hier de datum in"><br>
             <input class="mb-3" style="width: 230px;" type="text" name="host" required value="<?php echo $host;?>" placeholder="Vul hier de host in"><br>
-            <textarea name="players" cols="30" rows="10" required value="<?php echo $players;?>" placeholder="Vul hier de spelers in"></textarea><br>
+            <textarea cols="30" rows="10" name="players" required value="<?php echo $players;?>" placeholder="Vul hier de spelers in"></textarea><br>
             <input class="btn btn-primary" type="submit" value="Submit">
         </form> 
     </div>

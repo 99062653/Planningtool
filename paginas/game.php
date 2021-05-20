@@ -31,7 +31,7 @@
                 <li class="list-group-item"><strong>Skills: <span class="float-right"><?php echo $result["skills"]; ?></span></strong></li>
             </ul>
         </div>
-        <div class="float-right position-absolute" style="top: 50em; left: 100em;">
+        <div class="float-right position-absolute" style="top: 50em; left: 80em;">
             <a class="text-right btn btn-danger" href="plannen.php?id=<?php echo $result["id"]?>">plan deze game!</a>
         </div>
         <div class="mx-3 my-3">
