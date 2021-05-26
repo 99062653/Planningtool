@@ -3,6 +3,9 @@
     include("../includes/header.php");
     //$resultAlles = alleSpellen();
     $result = specifiekSpel();
+    $playtimemin = $result["play_minutes"];
+    $explainmin = $result["explain_minutes"];
+    $playtime = $playtimemin + $explainmin;
 ?>
 
 <html>
@@ -20,8 +23,9 @@
                 <?php
             }
             ?>
+            <input style="display: none;" name="playtime" type="text" value="<?php echo $playtime ?>">
             <input class="mb-3" style="width: 230px;" type="time" name="time" required value="<?php echo $time;?>"><br>
-            <input class="mb-3" style="width: 230px;" type="text" name="date" required value="<?php echo $date;?>" placeholder="vul hier de datum in"><br>
+            <input class="mb-3" style="width: 230px;" type="date" name="date" required value="<?php echo $date;?>" placeholder="vul hier de datum in"><br>
             <input class="mb-3" style="width: 230px;" type="text" name="host" required value="<?php echo $host;?>" placeholder="Vul hier de host in"><br>
             <textarea cols="30" rows="10" name="players" required value="<?php echo $players;?>" placeholder="Vul hier de spelers in"></textarea><br>
             <input class="btn btn-primary" type="submit" value="Submit">
